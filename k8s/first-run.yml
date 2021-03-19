@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: amitdalal.amitdalal.me
+ labels:
+  app: firstrun
+spec:
+ containers:
+  - name: first-run-app
+    image: amitdalal/node-app-k8s
+    resources:
+      limits:
+        memory: 512Mi
+        cpu: "1"
+      requests:
+        memory: 256Mi
+        cpu: "0.2"
+    ports:
+    - containerPort: 3000

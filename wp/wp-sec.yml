@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: wp-mysecret
+type: Opaque
+data:
+  db-password: b1C6s9lZg+pnG9k50a
