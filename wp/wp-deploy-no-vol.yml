@@ -31,7 +31,7 @@ spec:
           - name: WORDPRESS_DB_HOST
             value: 127.0.0.1
       - name: mysql
-        image: mysql:latest
+        image: mysql:5.7
         resources:
           limits:
             memory: "512Mi"
